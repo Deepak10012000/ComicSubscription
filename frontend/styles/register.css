@@ -1,0 +1,137 @@
+body{
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: large;
+    font-weight: 400;
+    background-color: tomato;
+}
+
+#login-box{
+    margin-top: 8vh;
+    height: 44vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#login-box form{
+    display: block;
+    height: 240px;
+    margin: 0 auto;
+    max-width: 480px;
+    background-color: rebeccapurple;
+    border: 2px whitesmoke solid;
+    border-radius: 20px;    
+    padding: 25px;
+}
+
+#login-box label{
+    display: inline-block;
+    margin: 5px;
+    color: antiquewhite;
+    width: 180px;
+}
+
+#login-box input{    
+    display: inline-block;
+    width: 220px;
+}
+
+#login-box img{    
+    background-color:white;
+    clip-path: circle();
+    margin:0 auto;
+    position: relative; 
+    top: 50px;  
+}
+
+#login-box button{
+    display: block;
+    margin: 0 auto;
+    background-color: tomato;
+    border: 2px solid tomato;
+    color: antiquewhite;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: large;
+    font-weight: 400;
+    width: 120px;
+    padding: 5px;
+    cursor: pointer;
+    animation-name: borderanim;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes borderanim{
+    0%{border: 2px solid tomato;}
+    50%{border: 2px solid whitesmoke;}
+    100%{border: 2px solid tomato;}
+}
+
+#form-box{
+    display: flex;
+    height:220px;
+    /* width: 500px; */
+    flex-direction: column;
+    justify-content: center;
+}
+
+#heading-bar{
+    display: block;
+    background-color: rgba(0,0,0,0.8);
+    color: antiquewhite;
+    padding: 5px 0;
+    text-align: center;
+    border-bottom: 2px white solid;
+    background-image: url("../images/comic-image.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#heading-bar h2{
+    background-color: rgba(0,0,0,0.6);
+    padding: 1px;
+    color: white;
+}
+
+#heading-bar h1:hover{
+    text-decoration: underline;
+}
+
+#result{
+    display: block;
+    height: 20px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    margin-top: 5px;
+}
+
+@media only screen and (max-width:768px){
+    #login-box form{
+        border: none;   
+        /* border-radius: 0; */
+        box-shadow: none;
+        padding: 10px;
+        font-size: medium;
+        /* background-co    lor: tomato; */
+    }
+    #login-box button{
+        border: none;
+    }
+    #login-box img{
+        display: none;
+    }
+}
+@media only screen and (max-width:459px){
+    #login-box input{
+        width: 140px;
+    }
+    #login-box label{
+        width: 140px;
+    }    
+    #login-box img{
+        display: none;
+    }
+}

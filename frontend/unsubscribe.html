@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/unsubscribe.css">
+    <title>XKCD UNSUBSCRIBE</title>
+    
+</head>
+<body>
+    <div id="heading-bar">
+        <h2>XKCD COMIC UNSUBSCRIBE PAGE</h2>
+    </div>
+    <div id="form-container">
+    <span>
+        <center>
+            <form id="email-send-form" method="POST">
+                <label>Click Here for OTP: </label>
+                <button type="submit" id="send-mail">SEND OTP MAIL</button>
+            </form>
+        </center>
+        <hr>
+        <form id="otp-check-form" method="POST">
+            <label>Your Email Address</label>
+            <input type="email" id="email" name="email" readonly required/><br>
+            <label>Enter your OTP</label>
+            <input type="text" id="OTP" required /><br><br>
+            <button type="submit" id="mail-check">Check OTP</button>
+        </form>
+        <div id="result"></div>
+    </span>
+    </div>
+</body>
+<script src="js/unsubscribe.js"></script>
+</html>

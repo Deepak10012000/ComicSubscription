@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/register.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap" rel="stylesheet">
+    <title>XKCD Registration</title>
+</head>
+<body>
+    <div id="heading-bar">
+        <h2>SUBSCRIBE FOR XKCD COMIC</h2>
+    </div>
+    <div id="login-box">
+        <img src="images/registration-1-512.png" width="100px" height="100px" />
+        <form method="POST" id="form">
+            <div id="form-box">
+                <span>
+                    <label for="user-email">Enter your Email</label><input type="email" id="user-email" name="email" required><br><br>
+                    <button type="submit" id="submit">Subscribe</button>
+                    <div id="result"></div>
+                </span>     
+            </div>
+        </form>
+        
+    </div>
+</body>
+<script src="js/register.js"></script>
+</html>
